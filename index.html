@@ -149,7 +149,9 @@ header.top .date{color:var(--muted);font-size:13px;font-variant-numeric:tabular-
 .chip.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:500}
 .chip.severe.on{background:var(--danger-soft);border-color:var(--danger);color:var(--danger)}
 textarea,input[type="date"],input[type="number"]{
-  width:100%;border:1px solid var(--line);border-radius:12px;background:var(--surface);
+  display:block;width:100%;max-width:100%;min-width:0;
+  -webkit-appearance:none;appearance:none;
+  border:1px solid var(--line);border-radius:12px;background:var(--surface);
   color:var(--ink);font-family:inherit;font-size:14px;padding:10px 12px;
 }
 textarea{min-height:64px;resize:vertical}
